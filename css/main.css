@@ -1,0 +1,516 @@
+body{
+	font-family: 'Ubuntu', sans-serif;
+	padding: 0;
+	margin: 0;
+	color: #543024;
+	font-size: 15px;
+}
+div, p, input, header, a, form, overlay-form{
+	box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6{
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+}
+h2{
+	font-weight: bold;
+	font-size: 38px;
+	color: #543024;
+}
+h3{
+	font-size: 19px;
+	margin-top: 16px;
+}
+section{
+	padding-top: 96px;
+	padding-bottom: 76px;
+}
+
+ul, li{
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+.btn{
+	background: #FF7D34;
+	border-radius: 69px;
+	color: #fff;
+	width: 223px;
+	padding: 16px 0;
+	font-weight: bold;
+	font-size: 17px;
+	display: block;
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+	border: none;
+	cursor: pointer;
+}
+#myModal {
+  width: 601px;
+  height: 500px;
+  padding: 58px 64px 97px;
+  border-radius: 20px;
+  background: #fafafa;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  margin: auto;
+  display: none;
+  opacity: 0;
+  z-index: 38;
+  text-align: center;
+}
+#myModal #myModal__close {
+  width: 21px; height: 21px;
+  position: absolute;
+  font-size: 29px;
+  top: 1px; right: 11px;
+  cursor: pointer;
+  display: block;
+}
+#myOverlay {
+  z-index: 37;
+  position: fixed;
+  background: rgba(0,0,0,.7);
+  width: 100%; height: 100%;
+  top: 0; left: 0;
+  cursor: pointer;
+  display: none;
+}
+.btn:hover{
+	background: #E35200;
+}
+.btn-ghost{
+	font-weight: bold;
+	font-size: 17px;
+	text-align: center;
+	color: #FF7D34;
+	border: 1px solid #FF7D34;
+	border-radius: 69px;
+	width: 245px;
+	padding: 16px 0;
+	display: block;
+}
+.btn-ghost:hover{
+	background: #FF7D34;
+	color: #fff;
+}
+.container{
+	width: 1200px;
+	margin: 0 auto;
+}
+.header{
+	background: url('../img/header.jpg') no-repeat center top / cover;
+	color: #fff;
+	padding-top: 43px;
+	padding-bottom: 75px;
+}
+.header a{
+	color: #fff;
+}
+.nav{
+	display: flex;
+	align-items: center;
+}
+.menu-btn img{
+	display: none;
+}
+.logo{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 16px;
+	letter-spacing: 0.055em;
+	display: block;
+	padding-left: 25px;
+	background: url('../img/logo.svg') no-repeat left center / contain;
+	margin-right: 94px;
+}
+.menu{
+	display: flex;
+}
+.menu-item:not(:last-child){
+	margin-right: 48px;
+}
+.menu a{
+	padding-bottom: 5px;
+	border-bottom: 1px solid transparent;
+}
+.menu a:hover{
+	border-bottom: 1px solid rgba(215, 212, 212, 0.82)
+}
+.call{
+	display: flex;
+	font-weight: bold;
+	font-size: 15px;
+	align-items: center;
+	align-items: center;
+	margin-left: auto;
+}
+.call-btn{
+	font-weight: bold;
+	font-size: 14px;
+	border-radius: 100px;
+	border: 1px solid #FFFFFF;
+	display: block;
+	padding: 11px 0;
+	width: 171px;
+	text-align: center;
+	margin-right: 21px;
+}
+.call-btn:hover{
+	background: #fff;
+	color: #BCB9C4;
+}
+.next{
+	font-weight: bold;
+	font-size: 14px;
+	margin-right: 53px;
+}
+.next span{
+	font-size: 12px;
+	display: block;
+}
+.offer{
+	margin-top: 215px;
+	text-align: center;
+}
+.offer h1{
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+.offer p{
+	width: 485px;
+	margin: 0 auto;
+	margin-bottom: 25px;
+	font-size: 17px;
+	line-height: 1.35em;
+}
+.offer .btn{
+	margin: 0 auto;
+}
+.container h2{
+	margin-bottom: 47px;
+}
+.arrow{
+	display: block;
+	height: 15px;
+	width: 15px;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	transform: rotate(45deg);
+	margin: 0 auto;
+	margin-top: 184px;
+}
+.destinations{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.destinations-items{
+	width: 585px;
+	box-shadow: 0px 17px 50px rgba(32, 40, 69, 0.14);
+	border-radius: 15px;
+	display: flex;
+	margin-top: 31px;
+	cursor:pointer;
+}
+.destinations-items:hover{
+	box-shadow: 0px 17px 50px rgba(42, 50, 79, 0.22);
+}
+.destinations-items img{
+	display: block;
+	border-radius: 15px 0px 0px 15px;
+}
+.destinations-content{
+	padding: 35px 28px;
+}
+.destinations-content p{
+	font-weight: normal;
+	font-size: 13px;
+}
+.destinations-details span{
+	font-size: 13px;
+	background: #EE3C5C;
+	border-radius: 30px;
+	padding: 3px;
+	margin-left: 2px;
+	color: #fff;
+}
+.destinations-more{
+	display: none;
+}
+.destinations-visible{
+	display: flex;
+}
+.destination-date{
+	color: #EE3C5C;
+	display: inline;
+	margin-left: 7.77px;
+}
+.btn-routes{
+	margin-top: 58px;
+}
+.container-about{
+	align-items: center;
+}
+.about-content{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.about-content img{
+	display: block;
+	border-radius: 15px;
+}
+.about-text{
+	width: 572px;
+}
+.about-text h3{
+	margin-bottom: 35px;
+}
+.about-text p{
+	width: 572px;
+	line-height: 1.5em;
+}
+.bottom{
+	display: flex;
+	align-items: center;
+}
+.form{
+	box-shadow: 0px 17px 50px rgba(32, 40, 69, 0.14);
+	border-radius: 20px;
+	width: 601px;
+	padding: 58px 64px 97px;
+}
+.form h3{
+	width: 367px;
+	margin-bottom: 45px;
+}
+.form input{
+	border: 1px solid rgba(39, 52, 86, 0.26);
+	box-sizing: border-box;
+	border-radius: 5px;
+	font-size: 16px;
+	font-family: 'Ubuntu', sans-serif;
+	display: block;
+	width: 100%;
+	padding: 19px 26px;
+	margin-bottom: 15px;
+}
+.form .btn{
+	width: 296px;
+	padding: 24px 0;
+	margin-top: 20px;
+}
+.tel{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+.tel p{
+	margin-top: 23px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.footer{
+	padding:96px 0 76px;
+}
+.footer p{
+	font-size: 14px;
+	color: rgba(114, 52, 26, 0.6);
+	text-align: center;
+}
+.overlay-form input{
+	border: 1px solid rgba(39, 52, 86, 0.26);
+	box-sizing: border-box;
+	border-radius: 5px;
+	font-size: 16px;
+	font-family: 'Ubuntu', sans-serif;
+	display: block;
+	width: 100%;
+	padding: 19px 26px;
+	margin-bottom: 15px;
+}
+.overlay-form h3{
+	margin-bottom: 45px;
+	text-align: center;
+}
+.btn-overlay{
+	margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+	.container{
+		width: 960px;
+	}
+	.menu{
+		display: none;
+	}
+	.destinations-items{
+		width: 100%;
+	}
+	.destinations-items img{
+		width: 40%;
+	}
+	.btn-routes {
+    	margin: 58px auto;
+	}
+	h2{
+		text-align: center;
+	}
+	.about{
+		padding: 0;
+	}
+	.about-content{
+		flex-wrap: wrap;
+	}
+	.about-content img{
+		width: 80%;
+		margin: 30px auto;
+	}
+	.about-text{
+		margin: 0 auto;
+	    text-align: center;
+	}
+	.next{
+		display: none;
+	}
+	.call{
+		margin-left: 40px;
+	}
+}
+@media screen and (max-width: 992px) {
+	.container{
+		width: 720px;
+	}
+	.next{
+		display: none;
+	}
+	.bottom{
+		display: block;
+	}
+	.form .btn{
+    	margin: 20px auto;
+    }
+    .form{
+		margin: 0 auto;
+	}
+	.form h3{
+		text-align: center;
+		width: 100%;
+	}
+	.tel{
+		margin-top: 60px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.container{
+		width: 540px;
+	}
+	.menu-btn img {
+		display: block;
+		margin-left: 100px;
+	}
+	.logo {
+		margin-right: 20px;
+	}
+	.offer h1 {
+		line-height: 1.1em;
+    	margin-bottom: 20px;
+	}
+	.destinations-content {
+    	padding: 20px 28px;
+	}
+	.about-text {
+	    width: 100%;
+	}
+	.about-text p{
+		width: 100%;
+	}
+	.form {
+		max-width: 100%;
+	}
+	.form h3{
+		text-align: center;
+	}
+	.call span{
+		display: none;
+	}
+	.overlay-form {
+		max-width: 100%;
+	}
+	.overlay-form h3{
+		text-align: center;
+	}
+	#myModal {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 576px) {
+	.container {
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.call{
+		display: none;
+	}
+	.menu-btn{
+		margin-left: auto;
+	}
+	.menu-btn img{
+		margin-left: 0;
+	}
+	.offer h1{
+		font-size: 30px;
+	}
+	.offer p{
+		width: 100%;
+		font-size: 16px;
+	}
+	.destinations-items{
+		width: 100%;
+		display: block;
+	}
+	.destinations-items img{
+		width: 100%;
+		border-radius: 15px 15px 0px 0;
+	}
+	section {
+		padding: 49px 0;
+	}
+	h2 {
+		font-size: 20px;
+		margin-bottom: 56px;
+	}
+	.about-text p {
+    	width: 100%;
+    	font-size: 10px;
+    }
+    h3{
+    	font-size: 18px;
+    }
+	.form {
+		padding: 42px 31px 65px;
+	}
+	.form h3 {
+		width: 100%;
+	}
+	.form input {
+		height: 51px;
+	}
+	.form input {
+		height: 57px;
+	}
+	.footer-text {
+		margin: 89px auto;
+	}
+	.form .btn{
+    	width: 100%;
+    }
+}
